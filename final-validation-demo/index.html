@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Release Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Final Release Validation</h1>
+    <p>Regression, Security & Performance Control</p>
+</header>
+
+<main>
+
+    <section class="summary">
+
+        <div class="card">
+            <h3>Regression Tests</h3>
+            <p id="testResult">Checking...</p>
+        </div>
+
+        <div class="card">
+            <h3>Security</h3>
+            <p id="securityResult">Checking...</p>
+        </div>
+
+        <div class="card">
+            <h3>Performance</h3>
+            <p id="performanceResult">Checking...</p>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Final Test Report</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Test</th>
+                <th>Expected</th>
+                <th>Result</th>
+            </tr>
+            </thead>
+
+            <tbody id="testTable"></tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Security Checklist</h2>
+        <ul id="securityList"></ul>
+    </section>
+
+    <section>
+        <h2>Performance Comparison</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Metric</th>
+                <th>Baseline</th>
+                <th>Current</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+
+            <tbody id="performanceTable"></tbody>
+        </table>
+    </section>
+
+</main>
+
+<footer>
+    <p>AIHEXA Internship - Week 8</p>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
