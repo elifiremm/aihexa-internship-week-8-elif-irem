@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release Readiness Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Release Readiness Dashboard</h1>
+    <p>Week 8 - Release Scope Freeze & Bug Triage</p>
+</header>
+
+<main>
+
+    <section class="summary">
+
+        <div class="card">
+            <h3>Release Scope</h3>
+            <p id="scopeStatus">FROZEN</p>
+        </div>
+
+        <div class="card">
+            <h3>Open Blockers</h3>
+            <p id="blockerCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Release Decision</h3>
+            <p id="releaseDecision">Checking...</p>
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>Final Bug List</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Problem</th>
+                <th>Severity</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Blocker</th>
+            </tr>
+            </thead>
+
+            <tbody id="bugTable"></tbody>
+
+        </table>
+
+    </section>
+
+
+    <section>
+
+        <h2>Go / No-Go Criteria</h2>
+
+        <ul id="criteriaList"></ul>
+
+    </section>
+
+
+    <section>
+
+        <h2>Release Risk List</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Risk</th>
+                <th>Probability</th>
+                <th>Impact</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+
+            <tbody id="riskTable"></tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>AIHEXA Internship - Week 8</p>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
